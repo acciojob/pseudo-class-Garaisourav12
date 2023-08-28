@@ -3,9 +3,17 @@
   position: relative;
 }
 
-#container::before,
+#container::before{
+  content: "Before Element";
+  display: block;
+  color: #f00;
+  font-size: 20px;
+  text-align: center;
+  margin: 10px 0; /* Adjust this margin as needed */
+}
+
 #container::after {
-  content: "Special Text";
+  content: "After Element";
   display: block;
   color: #f00;
   font-size: 20px;
